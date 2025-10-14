@@ -1,32 +1,54 @@
 #include <stdio.h>
 
-// Desafio de Xadrez - MateCheck
+// Desafio de Xadrez - novato
 // Este código inicial serve como base para o desenvolvimento do sistema de movimentação das peças de xadrez.
 // O objetivo é utilizar estruturas de repetição e funções para determinar os limites de movimentação dentro do jogo.
 
-int main() {
-    // Nível Novato - Movimentação das Peças
-    // Sugestão: Declare variáveis constantes para representar o número de casas que cada peça pode se mover.
+int main()
+{
 
-    // Implementação de Movimentação do Bispo
-    // Sugestão: Utilize uma estrutura de repetição para simular a movimentação do Bispo em diagonal.
+    // ----------------MOVIMENTANDO A TORRE USANDO O LAÇO FOR---------------------
+    printf("------ MOVIMENTO DA TORRE ------\n");
+    printf("A TORRE SE MOVE 5 CASAS PARA A DIREITA \n");
 
-    // Implementação de Movimentação da Torre
-    // Sugestão: Utilize uma estrutura de repetição para simular a movimentação da Torre para a direita.
+    for (int t = 1; t <= 5; t++)
+    {
+        printf("Casa %d: Direita \n", t);
+    }
 
-    // Implementação de Movimentação da Rainha
-    // Sugestão: Utilize uma estrutura de repetição para simular a movimentação da Rainha para a esquerda.
+    printf("A TORRE TERMINOU O MOVIMENTO!\n\n");
 
-    // Nível Aventureiro - Movimentação do Cavalo
-    // Sugestão: Utilize loops aninhados para simular a movimentação do Cavalo em L.
-    // Um loop pode representar a movimentação horizontal e outro vertical.
 
-    // Nível Mestre - Funções Recursivas e Loops Aninhados
-    // Sugestão: Substitua as movimentações das peças por funções recursivas.
-    // Exemplo: Crie uma função recursiva para o movimento do Bispo.
+    // ---------------- MOVIMENTANDO O BISPO USANDO O LAÇO WHILE------------------
+    printf("------ MOVIMENTO DO BISPO ------\n");
+    printf("O BISPO SE MOVE 5 CASAS NA DIAGONAL PARA CIMA E A DIREITA \n");
 
-    // Sugestão: Implemente a movimentação do Cavalo utilizando loops com variáveis múltiplas e condições avançadas.
-    // Inclua o uso de continue e break dentro dos loops.
+    // variavel para controlar o laço(movimentação do Bispo)
+    int b = 1;
+
+    while (b <= 5)
+    {
+        printf("Casa %d: Cima, Direita\n", b);
+        b++;
+    }
+    printf("O BISPO TERMINOU O MOVIMENTO!\n\n");
+
+
+
+    //----------------MOVIMENTANDO A RAINHA USANDO LAÇO DO WHILE-------------------
+    printf("------ MOVIMENTO DA RAINHA ------\n");
+    printf("A RAINHA SE MOVE 8 CASAS PARA A ESQUERDA \n");
+
+     // variavel para controlar o laço(movimentação da Rainha)
+     int r = 1;
+
+     do{
+        printf("Casa %d: Esquerda\n", r);
+        r++;
+     }
+     while(r <= 8);
+
+     printf("A RAINHA TEMINOU O MOVIMENTO \n\n");
 
     return 0;
 }
