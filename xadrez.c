@@ -50,5 +50,27 @@ int main()
 
      printf("A RAINHA TEMINOU O MOVIMENTO \n\n");
 
+
+
+    //----------------MOVIMENTO DO CAVALO USANDO OS LAÇOS WHILE E FOR-------------------
+    printf("------ MOVIMENTO DO CAVALO ------\n");
+    printf("O CAVALO SE MOVE 2 CASAS PARA BAIXO E 1 PARA A ESQUERDA \n");
+    int c = 0;
+
+    // Loop externo controla o movimento completo do cavalo
+    while (c < 1)
+    {
+        // Primeiro, o cavalo anda 2 casas para baixo
+        for (int j = 1; j <= 2; j++)
+        {
+            printf("CASA %d: PARA BAIXO\n", j);
+        }
+
+           printf("MOVENDO UMA CASA PARA A ESQUERDA ESQUERDA (1/1)\n");
+        c++;
+    }
+
+    printf("O CAVALO COMPLETOU O MOVIMENTO EM L \n\n");
+
     return 0;
 }
